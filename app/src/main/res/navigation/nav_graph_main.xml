@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_main"
+    app:startDestination="@id/booksFragment">
+
+    <fragment
+        android:id="@+id/booksFragment"
+        android:name="com.luizalberto.codelabtestes.ui.books.BooksFragment"
+        android:label="books_fragment"
+        tools:layout="@layout/books_fragment" >
+        <action
+            android:id="@+id/action_booksFragment_to_bookDetailsFragment"
+            app:destination="@id/bookDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookDetailsFragment"
+        android:name="com.luizalberto.codelabtestes.ui.details.BookDetailsFragment"
+        android:label="book_details_fragment"
+        tools:layout="@layout/book_details_fragment" >
+        <action
+            android:id="@+id/action_bookDetailsFragment_to_booksFragment"
+            app:destination="@id/booksFragment" />
+    </fragment>
+</navigation>
