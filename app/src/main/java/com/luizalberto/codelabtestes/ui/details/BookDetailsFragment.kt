@@ -8,7 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.luizalberto.codelabtestes.R
-import com.luizalberto.codelabtestes.extensions.navigateWithAnimationsReverse
+import com.luizalberto.codelabtestes.utils.navigateWithAnimationsReverse
 import kotlinx.android.synthetic.main.book_details_fragment.*
 
 class BookDetailsFragment : Fragment() {

@@ -1,4 +1,4 @@
-package com.luizalberto.codelabtestes.data
+package com.luizalberto.codelabtestes.data.api
 
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory

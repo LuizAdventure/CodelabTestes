@@ -1,4 +1,4 @@
-package com.luizalberto.codelabtestes.extensions
+package com.luizalberto.codelabtestes.utils
 
 import android.os.Bundle
 import androidx.navigation.NavController

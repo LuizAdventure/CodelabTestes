@@ -1,6 +1,6 @@
 package com.luizalberto.codelabtestes.data.repository
 
-import com.luizalberto.codelabtestes.data.BooksResult
+import com.luizalberto.codelabtestes.data.api.BooksResult
 
 interface BooksRepository {
 

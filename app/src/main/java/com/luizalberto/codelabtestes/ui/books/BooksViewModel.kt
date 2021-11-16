@@ -4,8 +4,8 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.luizalberto.codelabtestes.R
-import com.luizalberto.codelabtestes.data.BooksResult
-import com.luizalberto.codelabtestes.data.model.Book
+import com.luizalberto.codelabtestes.data.api.BooksResult
+import com.luizalberto.codelabtestes.model.Book
 import com.luizalberto.codelabtestes.data.repository.BooksRepository
 
 class BooksViewModel(private val dataSource: BooksRepository) : ViewModel() {
@@ -35,6 +35,7 @@ class BooksViewModel(private val dataSource: BooksRepository) : ViewModel() {
     }
 
     class ViewModelFactory(private val dataSource: BooksRepository) : ViewModelProvider.Factory {
+        @Suppress("UNCHECKED_CAST")
         override fun <T : ViewModel?> create(modelClass: Class<T>): T {
             if (modelClass.isAssignableFrom(BooksViewModel::class.java)) {
                 return BooksViewModel(dataSource) as T

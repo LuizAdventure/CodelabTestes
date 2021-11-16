@@ -1,6 +1,6 @@
 package com.luizalberto.codelabtestes.data.response
 
-import com.luizalberto.codelabtestes.data.model.Book
+import com.luizalberto.codelabtestes.model.Book
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
 

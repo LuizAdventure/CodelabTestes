@@ -3,8 +3,8 @@ package com.luizalberto.codelabtestes.ui.books
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.Observer
 import com.luizalberto.codelabtestes.R
-import com.luizalberto.codelabtestes.data.BooksResult
-import com.luizalberto.codelabtestes.data.model.Book
+import com.luizalberto.codelabtestes.data.api.BooksResult
+import com.luizalberto.codelabtestes.model.Book
 import com.luizalberto.codelabtestes.data.repository.BooksRepository
 import com.nhaarman.mockitokotlin2.verify
 import org.junit.Rule

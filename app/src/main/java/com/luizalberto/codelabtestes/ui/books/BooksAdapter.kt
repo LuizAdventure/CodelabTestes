@@ -9,8 +9,8 @@ import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.luizalberto.codelabtestes.R
 
-import com.luizalberto.codelabtestes.data.model.Book
-import com.luizalberto.codelabtestes.extensions.navigateWithAnimationsBundle
+import com.luizalberto.codelabtestes.model.Book
+import com.luizalberto.codelabtestes.utils.navigateWithAnimationsBundle
 import kotlinx.android.synthetic.main.item_book.view.*
 
 class BooksAdapter(val books: List<Book>) : RecyclerView.Adapter<BooksAdapter.BooksViewHolder>() {
@@ -30,10 +30,10 @@ class BooksAdapter(val books: List<Book>) : RecyclerView.Adapter<BooksAdapter.Bo
 
         init {
             itemView.setOnClickListener{
-                var title = books[adapterPosition].title
-                var author = books[adapterPosition].author
-                var description = books[adapterPosition].description
-                var bundle = bundleOf("title" to title, "author" to author, "description" to description)
+                val title = books[adapterPosition].title
+                val author = books[adapterPosition].author
+                val description = books[adapterPosition].description
+                val bundle = bundleOf("title" to title, "author" to author, "description" to description)
                 navigateDetail(itemView, bundle)
             }
         }

@@ -1,4 +1,4 @@
-package com.luizalberto.codelabtestes.data
+package com.luizalberto.codelabtestes.data.api
 
 import com.luizalberto.codelabtestes.data.response.BookBodyResponse
 import retrofit2.Call

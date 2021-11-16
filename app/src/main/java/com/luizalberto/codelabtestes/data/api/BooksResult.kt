@@ -1,6 +1,6 @@
-package com.luizalberto.codelabtestes.data
+package com.luizalberto.codelabtestes.data.api
 
-import com.luizalberto.codelabtestes.data.model.Book
+import com.luizalberto.codelabtestes.model.Book
 
 sealed class BooksResult {
 

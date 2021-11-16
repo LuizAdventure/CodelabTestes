@@ -1,8 +1,8 @@
 package com.luizalberto.codelabtestes.data.repository
 
-import com.luizalberto.codelabtestes.data.ApiService
-import com.luizalberto.codelabtestes.data.BooksResult
-import com.luizalberto.codelabtestes.data.model.Book
+import com.luizalberto.codelabtestes.data.api.ApiService
+import com.luizalberto.codelabtestes.data.api.BooksResult
+import com.luizalberto.codelabtestes.model.Book
 import com.luizalberto.codelabtestes.data.response.BookBodyResponse
 import retrofit2.Call
 import retrofit2.Callback
